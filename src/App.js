@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Homepage from "./component/homepage";
+import Article from "./component/article";
 import "./component/css/bootstrap.css";
 import "./component/css/style.css";
 import "./component/css/blog.css";
@@ -21,6 +22,8 @@ class App extends Component {
             </React.Fragment>
           )}
         />
+
+        <Route exact path="/article/:id" component={Article} />
       </Router>
     );
   }
